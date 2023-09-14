@@ -14,30 +14,6 @@ export class SidenavComponent implements OnInit {
 
   menus: MenuList | undefined;
 
-  // menus = [
-  //   {
-  //     "id": "Videos"
-  //   },
-  //   {
-  //     "id": "People"
-  //   },
-  //   {
-  //     "id": "Documents"
-  //   },
-  //   {
-  //     "id": "Events"
-  //   },
-  //   {
-  //     "id": "Communities"
-  //   },
-  //   {
-  //     "id": "Favorites"
-  //   },
-  //   {
-  //     "id": "Channels"
-  //   }
-  // ]
-
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
@@ -52,7 +28,6 @@ export class SidenavComponent implements OnInit {
       this.menus = menuList;
     }
   }
-
 
   onCloseSidenav() {
     this.onToggle.emit();

@@ -12,6 +12,6 @@ export class DisplayContentComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.videoData);
+
   }
 }

@@ -13,13 +13,10 @@ export class DataService {
   menuData$ = new BehaviorSubject<MenuList | null>(null);
   videoData$ = new BehaviorSubject<Videos| null>(null);
   activityData$ = new BehaviorSubject<Activities| null>(null);
-  products$ = new BehaviorSubject<any | null>(null);
 
   constructor(
     private http: HttpClient
   ) { }
-
-
 
   fetchMenu() {
     return this.http.get<MenuList>('assets/temp/menus.json').pipe(

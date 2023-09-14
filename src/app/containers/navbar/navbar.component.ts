@@ -27,14 +27,12 @@ export class NavbarComponent implements OnInit {
   }
 
   async initData() {
-    await firstValueFrom(this.dataService.fetchMenu());
+    const datas = await firstValueFrom(this.dataService.fetchMenu());
 
-    const dataMenu = this.dataService.menuData$.value
-    if (dataMenu) {
-      this.menus = dataMenu;
+    if (datas) {
+      this.menus = datas;
     }
   }
-
 
   ohShowSidenav() {
     this.onToggle.emit();
