@@ -1,0 +1,25 @@
+<div class="activity-container">
+    <div class="activity-header">
+        <span class="activity-title">Activity</span>
+        <hr class="line" width="100%">
+    </div>
+    <div class="activity-content">
+        <ng-container *ngFor="let item of activityData?.data">
+            <div class="activity-list">
+                <div class="activity-image">
+                    <span>image</span>
+                </div>
+                <div class="activity-details">
+                    <span class="detail-name">{{item.author}} <span class="detail-action"> {{item.action}}</span>
+                    </span>
+                    <span class="detail-desc">{{item.description}}</span>
+                    <div class="d-flex detail-icon gap-1">
+                        <mat-icon style="font-size: 18px;">history</mat-icon>
+                        <span class="detail-time">{{item.time}}</span>
+                        <span class="detail-history"> {{getDescTime(item.time)}}</span>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

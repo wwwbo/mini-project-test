@@ -1,0 +1,24 @@
+.sidenav-container {
+  flex: 1;
+}
+
+.sidenav-content-container {
+  width: 25em;
+}
+
+.main-content {
+  padding: 0 2rem;
+  background-color: #953E46;
+}
+
+.main-layout-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .sidenav-content-container {
+    width: 23em !important;
+  }
+}

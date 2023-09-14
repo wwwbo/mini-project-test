@@ -1,0 +1,97 @@
+.navbar-container {
+    position: fixed;
+    height: 7.9rem;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    padding: 0 2rem;
+    background-color: #953E46;
+}
+
+.web-title {
+    font-size: 1.9rem;
+    flex-grow: 0.7;
+    font-weight: 100;
+}
+
+.split-title {
+    font-weight: 400;
+    color: #F4E3CF;
+}
+
+.search-input {
+    height: 2.5rem;
+    width: 26rem;
+    background-color: #F4E3CF;
+    border: none;
+    border-radius: 0.5rem;
+    padding-left: 0.8rem;
+    background-image: url(../../../assets/icons/search.svg);
+    background-position-y: center;
+    background-position-x: 23.5rem;
+    background-size: 1.3rem;
+    background-repeat: no-repeat;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    background: #F4E3CF;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.custom-icon {
+    background: #F4E3CF;
+}
+
+.user-account {
+    background: #F4E3CF;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.menu-hamburger {
+    width: 30px;
+    display: none;
+    color: #F4E3CF;
+}
+
+.dynamic-display {
+    display: none !important;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .web-title {
+        flex-grow: 0.94;
+        font-size: 1.3rem;
+    }
+    .custom-icon {
+        font-size: 18px;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    .desktop-display {
+        display: none !important;
+    }
+
+    .dynamic-display {
+        display: flex !important;
+        gap: 0.3rem;
+    }
+    
+    button {
+        padding: 0.1rem 0.2rem;
+    }
+
+    .menu-list {
+        display: none;
+    }
+}

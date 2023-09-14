@@ -1,0 +1,42 @@
+<div class="navbar-container">
+    <div class="d-flex align-items-center justify-content-between mb-3 mt-3">
+        <span class="web-title">
+            <span class="split-title">Social</span>Network
+        </span>
+        <div class="d-flex gap-3 desktop-display">
+            <input class="search-input" type="text" placeholder="Find...">
+            <button class="d-flex align-items-center justify-content-center">
+                <mat-icon class="d-flex align-items-center justify-content-center custom-icon">add</mat-icon>
+                Upload
+            </button>
+            <div class="d-flex align-items-center gap-2">
+                <span class="user-account">
+                    <mat-icon  class="d-flex align-items-center justify-content-center" style="background: #F4E3CF;">account_circle</mat-icon>
+                </span>
+                <div class="d-flex flex-column">
+                    <span style="font-size: 15px; font-weight: 500;">Ucup</span>
+                    <span style="font-size: 10px;">Developer</span>
+                </div>
+            </div>
+        </div>
+        <div class="dynamic-display">
+            <button class="d-flex align-items-center justify-content-center">
+                <mat-icon class="d-flex align-items-center justify-content-center custom-icon">add</mat-icon>
+            </button>
+            <button class="d-flex align-items-center justify-content-center" (click)="onClickSearch()">
+                <mat-icon class="d-flex align-items-center justify-content-center custom-icon">search</mat-icon>
+            </button>
+        </div>
+        <img class="menu-hamburger pointer" src="assets/images/ic-hamburger.png" alt="" (click)="ohShowSidenav()">
+    </div>
+    <div class="menu-list">
+        <hr width="100%" />
+        <div *ngIf="menus && menus != undefined" class="d-flex flex-row navbar-child gap-2">
+            <ng-container *ngFor="let menu of menus?.menus; let last = last">
+                <span>{{menu.id}}</span>
+                <span *ngIf="!last">/</span>
+            </ng-container>
+        </div>
+        <hr width="100%" />
+    </div>
+</div>

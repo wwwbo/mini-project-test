@@ -1,0 +1,28 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer [mode]="'over'" position="end" [autoFocus]="false" [fixedInViewport]="true">
+        <div class="sidenav-content-container">
+            <app-sidenav (onToggle)="drawer.toggle()"></app-sidenav>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="d-flex flex-column" style="background-color: var(--white);">
+            <app-navbar (onToggle)="drawer.toggle()"></app-navbar>
+            <div class="main-content">
+                <div class="main-layout-container">
+                    <app-videos></app-videos>
+                    <app-activity></app-activity>
+                </div>
+
+                <div class="main-layout-container">
+                    <app-people></app-people>
+                    <app-channels></app-channels>
+                </div>
+                
+                <div class="main-layout-container">
+                    <app-documents></app-documents>
+                </div>
+            </div>
+            <app-footer></app-footer>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

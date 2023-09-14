@@ -1,0 +1,25 @@
+{
+    "menus": [
+        {
+            "id": "Videos"
+        },
+        {
+            "id": "People"
+        },
+        {
+            "id": "Documents"
+        },
+        {
+            "id": "Events"
+        },
+        {
+            "id": "Communities"
+        },
+        {
+            "id": "Favorites"
+        },
+        {
+            "id": "Channels"
+        }
+    ]
+}

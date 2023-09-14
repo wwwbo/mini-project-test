@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+/* * {
+    background-color: #953E46;
+} */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    padding-top: 7.9rem;
+    /* background-color: #953E46; */
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* video container */
+.video-container {
+    flex-grow: 0.8;
+    color: #F4E3CF;
+}
+
+.video-header {
+    padding: 1rem 0;
+    display: flex;
+}
+
+.video-title {
+    flex-grow: 0.5;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* end video container */

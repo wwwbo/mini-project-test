@@ -1,0 +1,24 @@
+.search-input {
+    height: 2.5rem;
+    width: 26rem;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 0.5rem;
+    padding-left: 0.8rem;
+    background-image: url(../../../assets/icons/search.svg);
+    background-position-y: center;
+    background-position-x: 23.5rem;
+    background-size: 1.3rem;
+    background-repeat: no-repeat;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .search-input {
+        width: 14rem;
+        background-position-x: 11.5rem;
+    }
+}

@@ -1,0 +1,34 @@
+.activity-container {
+    color: #F4E3CF;
+}
+
+.channel-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 26rem;
+    gap: 0.5rem;
+}
+
+.items {
+    border: 1px solid #fff;
+    height: 6rem;
+    width: 12.4rem;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.activity-header {
+    padding: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    border: 2px solid;
+}
+
+.activity-title {
+    flex-grow: 0.5;
+    font-weight: 500;
+    font-size: 20px;
+}

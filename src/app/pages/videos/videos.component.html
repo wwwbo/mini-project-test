@@ -1,0 +1,10 @@
+<div class="video-container">
+    <div class="video-header">
+        <span class="video-title">Videos</span>
+    </div>
+    <div class="video-content">
+        <ng-container *ngIf="videoData && videoData?.data">
+            <app-display-content [videoData]="videoData"></app-display-content>
+        </ng-container>
+    </div>
+</div>
