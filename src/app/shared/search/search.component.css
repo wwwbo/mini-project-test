@@ -1,7 +1,7 @@
 .search-input {
     height: 2.5rem;
     width: 26rem;
-    background-color: #eeeeee;
+    background-color: var(--text-color);
     border: none;
     border-radius: 0.5rem;
     padding-left: 0.8rem;
@@ -16,9 +16,16 @@
     outline: none;
 }
 
+@media screen and (max-width: 620px) {
+    .search-input {
+        width: 12rem !important;
+        background-position-x: 10rem !important;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .search-input {
-        width: 14rem;
-        background-position-x: 11.5rem;
+        width: 20rem;
+        background-position-x: 17.8rem;
     }
 }

@@ -1,3 +1,21 @@
-.footer-container {
-    padding: 0 2rem;
+.footer {
+    color: var(--text-color);
+}
+
+.logos {
+    color: #242424;
+}
+
+.menu-list::after {
+    content: ' /';
+}
+
+@media screen and (max-width: 620px) {
+    .footer-menus {
+        flex-direction: column;
+    }
+
+    .menu-list::after {
+        content: '';
+    }
 }

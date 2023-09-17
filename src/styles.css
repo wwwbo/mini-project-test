@@ -1,8 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-/* * {
-    background-color: #953E46;
-} */
-
 html,
 body {
     height: 100%;
@@ -12,17 +8,27 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
     padding-top: 7.9rem;
-    /* background-color: #953E46; */
+}
+
+:root {
+    --bg-color: #953E46;
+    --text-color: #F4E3CF;
 }
 
 .pointer {
     cursor: pointer;
 }
 
+.custom-icons {
+    background: var(--text-color);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
 /* video container */
 .video-container {
     flex-grow: 0.8;
-    color: #F4E3CF;
+    color: var(--text-color);
 }
 
 .video-header {
@@ -37,3 +43,10 @@ body {
 }
 
 /* end video container */
+
+
+@media screen and (max-width: 620px) {
+    .video-container {
+        width: 100%;
+    }
+}

@@ -11,7 +11,7 @@ import { Activities } from './activity.models';
 export class ActivityComponent implements OnInit {
   activityData: Activities | undefined;
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
     this.initData();

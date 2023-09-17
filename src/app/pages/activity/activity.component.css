@@ -1,5 +1,5 @@
 .activity-container {
-    color: #F4E3CF;
+    color: var(--text-color);
 }
 
 .activity-header {
@@ -13,13 +13,8 @@
 }
 
 .activity-title {
-    flex-grow: 0.5;
     font-weight: 500;
     font-size: 20px;
-}
-
-.activity-content {
-    padding: 0.5rem 0;
 }
 
 .activity-list {
@@ -29,9 +24,9 @@
 
 .activity-image {
     margin-right: 0.5rem;
-    width: 8rem;
-    height: 5rem;
-    background: #F4E3CF;
+    width: 6rem;
+    height: 4.5rem;
+    background: var(--text-color);
     border-radius: 0.5rem;
 }
 
@@ -49,4 +44,10 @@
 .detail-action {
     font-size: 12px;
     font-weight: 100;
+}
+
+@media screen and (max-width: 600px) {
+    .activity-container {
+        width: 100%
+    }
 }

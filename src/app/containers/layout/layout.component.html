@@ -8,21 +8,13 @@
         <div class="d-flex flex-column" style="background-color: var(--white);">
             <app-navbar (onToggle)="drawer.toggle()"></app-navbar>
             <div class="main-content">
-                <div class="main-layout-container">
-                    <app-videos></app-videos>
-                    <app-activity></app-activity>
-                </div>
-
-                <div class="main-layout-container">
-                    <app-people></app-people>
-                    <app-channels></app-channels>
-                </div>
-                
-                <div class="main-layout-container">
-                    <app-documents></app-documents>
-                </div>
+                <app-videos></app-videos>
+                <app-activity></app-activity>
+                <app-people></app-people>
+                <app-channels></app-channels>
+                <app-documents></app-documents>
+                <app-footer></app-footer>
             </div>
-            <app-footer></app-footer>
         </div>
     </mat-sidenav-content>
 </mat-sidenav-container>
