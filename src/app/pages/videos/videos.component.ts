@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
-import { DataService } from 'src/app/services/data.service';
-import { Video, Videos } from './video.model';
+import { Videos } from './video.model';
+import { VideosService } from './videos.service';
 
 @Component({
   selector: 'app-videos',
@@ -11,14 +11,14 @@ import { Video, Videos } from './video.model';
 export class VideosComponent implements OnInit {
   videoData: Videos | undefined;
 
-  constructor(private dataService: DataService) {}
+  constructor(private videoService: VideosService) { }
 
   ngOnInit(): void {
     this.initData();
   }
 
   async initData() {
-    const datas = await firstValueFrom(this.dataService.fetchVideo());
+    const datas = await firstValueFrom(this.videoService.fetchVideo());
 
     if (datas) {
       this.videoData = datas;
